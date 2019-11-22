@@ -1,0 +1,30 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  table
+  {
+      margin-left:20%;
+      margin-top: 1rem;
+  }
+  th, td {
+    padding: 5px;
+    text-align: left;    
+  }
+
+  .addButton{
+      margin-left: 60%;
+      margin-top: 0.5%;
+  }
+  
+  body
+{
+    counter-reset: Serial;           
+}
+
+  tr td:first-child:before{
+    
+      counter-increment: Serial;
+      content:counter(Serial)
+  }
